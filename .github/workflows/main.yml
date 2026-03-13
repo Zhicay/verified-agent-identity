@@ -24,9 +24,9 @@ jobs:
           cd scripts
           npm install
 
-      - name: Create new Ethereum Identity
+      - name: Create Ethereum Identity
         run: node scripts/createNewEthereumIdentity.js
 
       - name: Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "ZhIcay", "description": "ZhIcay AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name":"zhicay","description":"zhicay AI Agent"}'
